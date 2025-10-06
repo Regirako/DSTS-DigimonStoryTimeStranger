@@ -36,7 +36,7 @@ DSTS-DigimonStoryTimeStranger/
 
 ## 🖼️ Preview
 
-![Preview da Página](https://i.imgur.com/hqU5JSu.png)
+![Preview da Página](https://i.imgur.com/Vx6uJ46.png)
 
 ---
 
