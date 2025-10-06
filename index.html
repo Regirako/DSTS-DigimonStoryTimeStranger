@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DSTS - Digimon Story Time Stranger</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="pattern-overlay"></div>
+
+  <div class="container">
+    <div class="info-block">
+      <img src="assets/banner.jpg" alt="Digimon Story Time Stranger" class="banner"/>
+      <div class="info">
+        <h1><strong>Digimon Story Time Stranger</strong></h1>
+        <p> </p>
+        <p><strong>Build:</strong> 20027848</p>
+        <p>
+          <a class="steam-link" href="https://store.steampowered.com/app/1984270/Digimon_Story_Time_Stranger/" target="_blank">
+            Loja da Steam
+          </a>
+        </p>
+        <p><strong>Gênero(s):</strong> Ação, RPG</p>
+        <p><strong>Desenvolvedor:</strong> Media.Vision Inc.</p>
+        <p><strong>Publicadora:</strong> Bandai Namco Entertainment Inc.</p>
+        <button onclick="playVideo()">Download Digimon Story Time Stranger [FitGirl Repacks]</button>
+      </div>
+    </div>
+  </div>
+
+  <video id="video" src="assets/seu-video.mp4" playsinline autoplay muted></video>
+
+  <script>
+    function playVideo() {
+      const body = document.querySelector('body');
+      const container = document.querySelector('.container');
+      const video = document.getElementById('video');
+
+      container.style.display = 'none';
+      video.style.display = 'block';
+      video.muted = false;
+
+      video.play().catch((err) => {
+        console.error("Erro ao iniciar vídeo:", err);
+      });
+
+      body.style.overflow = 'hidden';
+    }
+  </script>
+</body>
+</html>
